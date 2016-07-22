@@ -1,0 +1,12 @@
+#make a directory and enter it
+function md() {
+  mkdir -p "$@" && cd "$@"
+}
+
+function vserve() {
+  vagrant up --provider=virtualbox $@ && vagrant rsync-auto $@ > /dev/null & vagrant ssh $@ && fg
+}
+
+# auto generate some gitignores
+
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}

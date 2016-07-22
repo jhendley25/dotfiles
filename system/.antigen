@@ -1,0 +1,28 @@
+# antigen for plugin management
+source ~/antigen/antigen.zsh
+
+local b="antigen-bundle"
+
+# Guess what to install when running an unknown command.
+$b command-not-found
+
+# homebrew  - autocomplete on `brew install`
+$b brew
+$b brew-cask
+
+# Tracks your most used directories, based on 'frecency'.
+$b robbyrussell/oh-my-zsh plugins/z
+
+# suggestion as you type
+$b tarruda/zsh-autosuggestions
+
+# Syntax highlighting on the readline
+$b zsh-users/zsh-syntax-highlighting
+
+#tell antigen you're done
+antigen apply
+
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh

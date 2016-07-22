@@ -1,0 +1,16 @@
+# `cat` with beautiful colors. requires Pygments installed.
+#                  sudo easy_install -U Pygments
+
+alias c='pygmentize -O style=monokai -f console256 -g'
+alias gs="git status"
+alias whoops="git commit -a --amend --no-edit"
+alias ga="git add"
+alias gc="git commit -m"
+alias gp="git push"
+alias gco="git checkout"
+alias rs="rails s"
+alias rc="rails console"
+alias finder="open --reveal ."
+alias bd="boot2docker"
+alias git-shoot="git push origin --delete"
+alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
