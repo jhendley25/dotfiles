@@ -16,3 +16,4 @@ alias git-shoot="git push origin --delete"
 alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 
 alias redc="redis-cli"
+alias fman="forman start -f Procfile.dev"
