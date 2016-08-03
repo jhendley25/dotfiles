@@ -7,6 +7,10 @@ function vserve() {
   vagrant up --provider=virtualbox $@ && vagrant rsync-auto $@ > /dev/null & vagrant ssh $@ && fg
 }
 
+function fman() {
+  foreman start -f Procfile.dev
+}
+
 # auto generate some gitignores
 
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
