@@ -2,17 +2,27 @@
 #                  sudo easy_install -U Pygments
 
 alias c='pygmentize -O style=monokai -f console256 -g'
-alias gs="git status"
+
+# add dirty files to last commit
 alias whoops="git commit -a --amend --no-edit"
+alias gs="git status"
 alias ga="git add"
 alias gc="git commit -m"
 alias gp="git push"
 alias gco="git checkout"
 alias rs="rails s"
 alias rc="rails console"
+
+#open finder to current dir
 alias finder="open --reveal ."
-alias bd="boot2docker"
+
+#delete remote branch
 alias git-shoot="git push origin --delete"
+
+# "intelligently" try to redo the last command (typos, gp with no upstream, etc)
 alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 
 alias redc="redis-cli"
+
+# go to lock screen
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
