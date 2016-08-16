@@ -26,3 +26,6 @@ alias redc="redis-cli"
 
 # go to lock screen
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+#play starwars yo
+alias starwars="telnet towel.blinkenlights.nl"
