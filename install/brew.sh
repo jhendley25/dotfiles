@@ -37,6 +37,7 @@ apps=(
   vim
   wget
   wifi-password
+  thefuck
 )
 
 brew install "${apps[@]}"
