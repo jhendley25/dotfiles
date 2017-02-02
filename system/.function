@@ -20,6 +20,10 @@ function manpdf() {
  man -t "${1}" | open -f -a /Applications/Preview.app/
 }
 
+function findproc() {
+ ps -ax | grep "$@"
+}
+
 # Extra many types of compressed packages
 # Credit: http://nparikh.org/notes/zshrc.txt
 extract() {
