@@ -8,7 +8,7 @@ brew tap caskroom/versions
 
 apps=(
   alfred
-  atom 
+  atom
   firefox
   google-chrome
   iterm
