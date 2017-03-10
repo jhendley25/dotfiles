@@ -11,7 +11,7 @@ apps=(
   atom
   firefox
   google-chrome
-  iterm
+  iterm2
   screenflow
   slack
   spotify
