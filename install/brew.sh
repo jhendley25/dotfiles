@@ -29,6 +29,7 @@ apps=(
   mackup
   peco
   psgrep
+  postgresql
   python
   shellcheck
   ssh-copy-id
