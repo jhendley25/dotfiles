@@ -12,6 +12,8 @@ fi
 READLINK=$(which greadlink || which readlink)
 CURRENT_SCRIPT=$BASH_SOURCE
 
+export NVM_DIR="$HOME/.nvm"
+
 if [[ -n $CURRENT_SCRIPT && -x "$READLINK" ]]; then
   SCRIPT_PATH=$($READLINK -f "$CURRENT_SCRIPT")
   DOTFILES_DIR=$(dirname "$(dirname "$SCRIPT_PATH")")
@@ -41,3 +43,6 @@ unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE
 # Export
 
 export OS DOTFILES_DIR EXTRA_DIR
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
