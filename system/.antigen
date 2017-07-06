@@ -1,23 +1,25 @@
 # antigen for plugin management
-# source /usr/local/share/antigen/antigen.zsh
+if [ ! -f /usr/local/share/antigen/antigen.zsh ]; then
+    echo "Antigen not found! brew install it dummy"
+fi
 
-local b="antigen-bundle"
+source /usr/local/share/antigen/antigen.zsh
 
 # Guess what to install when running an unknown command.
-$b command-not-found
+antigen bundle command-not-found
 
 # homebrew  - autocomplete on `brew install`
-$b brew
-$b brew-cask
+antigen bundle brew
+antigen bundle brew-cask
 
 # Tracks your most used directories, based on 'frecency'.
-$b robbyrussell/oh-my-zsh plugins/z
+antigen bundle robbyrussell/oh-my-zsh plugins/z
 
 # suggestion as you type
-$b tarruda/zsh-autosuggestions
+antigen bundle tarruda/zsh-autosuggestions
 
 # Syntax highlighting on the readline
-$b zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-syntax-highlighting
 
 #tell antigen you're done
 antigen apply
