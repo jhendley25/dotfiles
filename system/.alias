@@ -29,3 +29,6 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 #play starwars yo
 alias starwars="telnet towel.blinkenlights.nl"
+
+#docker-compose
+alias dco="docker-compose"
