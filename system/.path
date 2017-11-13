@@ -15,3 +15,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 export PATH="$(brew --prefix)/bin:$PATH"
+
+export PATH="$HOME/.fastlane/bin:$PATH"
