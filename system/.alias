@@ -8,7 +8,6 @@ alias whoops="git commit -a --amend --no-edit"
 alias gs="git status"
 alias ga="git add"
 alias gc="git commit -m"
-alias gdc="git diff --cached"
 alias gp="git push"
 alias gco="git checkout"
 alias rs="rails s"
@@ -33,3 +32,6 @@ alias starwars="telnet towel.blinkenlights.nl"
 
 #docker-compose
 alias dco="docker-compose"
+
+# get git branch differences
+alias diffbranches="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
