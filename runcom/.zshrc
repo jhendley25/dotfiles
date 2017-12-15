@@ -51,3 +51,6 @@ export PATH="/usr/local/opt/elasticsearch@2.4/bin:$PATH"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# override Ctrl-s for vim reasons
+stty -ixon

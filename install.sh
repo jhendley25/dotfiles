@@ -15,3 +15,4 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 
 ln -svf ~/dotfiles/runcom/.zshrc ~/.zshrc
+ln -svf ~/dotfiles/runcom/.vimrc ~/.vimrc
