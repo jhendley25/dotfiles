@@ -8,6 +8,8 @@ brew tap caskroom/versions
 
 apps=(
   alfred
+  android-sdk
+  android-ndk
   atom
   firefox
   google-chrome

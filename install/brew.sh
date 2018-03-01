@@ -10,6 +10,7 @@ brew upgrade
 # Install packages
 
 apps=(
+  ant
   bash-completion2
   bats
   battery
@@ -21,12 +22,14 @@ apps=(
   gifsicle
   git
   gnu-sed --with-default-names
+  gradle
   grep --with-default-names
   hub
   httpie
   imagemagick
   jq
   mackup
+  maven
   peco
   psgrep
   postgresql
