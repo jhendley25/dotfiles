@@ -12,14 +12,17 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 . "$DOTFILES_DIR/install/brew-cask.sh"
 . "$DOTFILES_DIR/install/rvm.sh"
 . "$DOTFILES_DIR/install/npm.sh"
+. "$DOTFILES_DIR/install/vscode.sh"
 
 # get the vim stuff via submodule
-
 git submodule init
 git submodule update --depth=1
 
-#NOTE need to add some type for plugin registration for vim for new stuff I install..
+# symlink them there rc files
+ln -svf $DOTFILES_DIR/runcom/.zshrc ~/.zshrc
+ln -svf $DOTFILES_DIR/runcom/.vimrc ~/.vimrc
 
-
-ln -svf ~/dotfiles/runcom/.zshrc ~/.zshrc
-ln -svf ~/dotfiles/runcom/.vimrc ~/.vimrc
+# go on ahead and symlink them there vscode settings too
+ln -s $DOTFILES_DIR/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s $DOTFILES_DIR/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -s $DOTFILES_DIR/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets

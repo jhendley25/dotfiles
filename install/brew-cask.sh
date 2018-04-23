@@ -10,7 +10,6 @@ apps=(
   alfred
   android-sdk
   android-ndk
-  atom
   firefox
   google-chrome
   iterm2
@@ -18,6 +17,7 @@ apps=(
   slack
   spotify
   virtualbox
+  visual-studio-code
 )
 
 brew cask install "${apps[@]}"
