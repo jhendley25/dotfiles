@@ -1,7 +1,7 @@
 {
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "eslint.enable": false,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "editor.parameterHints": false,
     "workbench.colorTheme": "Monokai",
     "editor.fontFamily": "Fira Code",
@@ -34,5 +34,6 @@
         "<C-f>": true
     },
     "explorer.confirmDragAndDrop": false,
-    "editor.snippetSuggestions": "top"
+    "editor.snippetSuggestions": "top",
+    "javascript.updateImportsOnFileMove.enabled": "always"
 }
