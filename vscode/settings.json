@@ -35,5 +35,6 @@
     },
     "explorer.confirmDragAndDrop": false,
     "editor.snippetSuggestions": "top",
-    "javascript.updateImportsOnFileMove.enabled": "always"
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.acceptSuggestionOnCommitCharacter": false
 }
