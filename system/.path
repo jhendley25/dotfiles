@@ -6,7 +6,6 @@ ZSH_THEME="jake"
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
@@ -14,7 +13,6 @@ export EDITOR="$VISUAL"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 export PATH="$(brew --prefix)/bin:$PATH"
 
@@ -45,3 +43,7 @@ if [ -f '/Users/jhendley/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/j
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/jhendley/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/jhendley/google-cloud-sdk/completion.zsh.inc'; fi
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
