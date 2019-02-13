@@ -37,5 +37,7 @@
     "editor.snippetSuggestions": "top",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.acceptSuggestionOnCommitCharacter": false,
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "solargraph.formatting": true,
+    "solargraph.commandPath": "/Users/jhendley/.rvm/gems/ruby-2.6.0/bin/solargraph"
 }
