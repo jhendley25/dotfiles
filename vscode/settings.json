@@ -2,7 +2,6 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "eslint.enable": false,
     "window.zoomLevel": 0,
-    "editor.parameterHints": false,
     "workbench.colorTheme": "Monokai",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
