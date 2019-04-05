@@ -26,7 +26,7 @@ fi
 
 # Finally we can source the dotfiles (order matters)
 
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,path,env,alias,nvm,antigen,vimode}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{function,path,env,alias,nvm,antigen}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
