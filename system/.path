@@ -47,3 +47,10 @@ if [ -f '/Users/jhendley/google-cloud-sdk/completion.zsh.inc' ]; then source '/U
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# add golang paths
+# all go stuff in ~/go-workspace
+export GOPATH=$HOME/go-workspace 
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin

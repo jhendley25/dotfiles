@@ -22,6 +22,7 @@ apps=(
   gifsicle
   git
   gnu-sed --with-default-names
+  golang
   gradle
   grep --with-default-names
   hub
