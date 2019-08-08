@@ -10,6 +10,7 @@ apps=(
   alfred
   android-sdk
   android-ndk
+  docker
   firefox
   google-chrome
   iterm2

@@ -40,3 +40,5 @@ alias diffbranches="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%
 
 #Sequelize alias cuz it's annoying
 alias lise="sequelize"
+
+alias k8="kubectl"

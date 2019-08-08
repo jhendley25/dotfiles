@@ -39,5 +39,14 @@
     "explorer.confirmDelete": false,
     "solargraph.formatting": true,
     "solargraph.commandPath": "/Users/jhendley/.rvm/gems/ruby-2.6.0/bin/solargraph",
-    "editor.parameterHints.enabled": false
+    "editor.parameterHints.enabled": false,
+    "sshfs.configs": [
+        {
+            "host": "sawa",
+            "name": "sawa",
+            "privateKeyPath": "$HOME/.ssh/sawa.pem",
+            "root":"/var/www/vhosts/jake/sawa",
+            "username": "ubuntu"
+        }
+    ]
 }

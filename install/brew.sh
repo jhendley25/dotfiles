@@ -3,6 +3,7 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap homebrew/versions
 brew tap homebrew/dupes
+brew tap jesseduffield/lazydocker
 brew tap Goles/battery
 brew update
 brew upgrade
@@ -29,6 +30,7 @@ apps=(
   httpie
   imagemagick
   jq
+  lazydocker
   mackup
   maven
   peco
