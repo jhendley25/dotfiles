@@ -66,7 +66,7 @@ wcb() {
     BUILD_ID=$(gcloud builds list | awk /$@/ | awk 'NR==2 {print $1}')
   else
     echo "streaming most recent cloud build logs for rhesus"
-    BUILD_ID=$(gcloud builds list | awk /rhesus/ | awk 'NR==2 {print $1}')
+    BUILD_ID=$(gcloud builds list | awk /rhesus/ | awk 'NR==1 {print $1}')
   fi
     
   gcloud builds log "$BUILD_ID" --stream
