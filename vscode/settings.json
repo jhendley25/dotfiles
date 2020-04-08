@@ -1,7 +1,7 @@
 {
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "eslint.enable": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "workbench.colorTheme": "Monokai",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
@@ -48,5 +48,8 @@
             "root":"/var/www/vhosts/jake/sawa",
             "username": "ubuntu"
         }
-    ]
+    ],
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
