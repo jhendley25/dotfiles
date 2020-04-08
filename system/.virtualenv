@@ -1,0 +1,16 @@
+# because virtual env is annoying to activate all the time
+# so if theres a .venv file, activate stuff
+autoload -U add-zsh-hook
+load-venv() {
+  if [[ -f .venv && -r .venv ]]; then
+    echo ".venv file found, activating env"
+    # eventually need to make this better and use a path in the .env file
+    source .venv
+    source ./$VENV_NAME/bin/activate
+  elif [[ ! -z $VIRTUAL_ENV ]]; then
+    echo "virtualenv deactivated"
+    deactivate
+  fi
+}
+add-zsh-hook chpwd load-venv
+load-venv
