@@ -1,55 +1,61 @@
 {
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "eslint.enable": false,
-    "window.zoomLevel": 1,
-    "workbench.colorTheme": "Monokai",
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "workbench.iconTheme": "vscode-great-icons",
-    "editor.tabSize": 2,
-    "editor.multiCursorModifier":"ctrlCmd",
-    "editor.tabCompletion": true,
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j","j"],
-            "after": ["<Esc>"]
-        }
-    ],
-    "vim.otherModesKeyBindingsNonRecursive": [
-        {
-            "before": ["s"],
-            "after": ["leader", "leader", "s"]
-        }
-    ],
-    "vim.leader": "<space>",
-    "vim.handleKeys":{
-        "<C-a>": false,
-        "<C-e>": false,
-        "<C-f>": true
-    },
-    "explorer.confirmDragAndDrop": false,
-    "editor.snippetSuggestions": "top",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "explorer.confirmDelete": false,
-    "solargraph.formatting": true,
-    "solargraph.commandPath": "/Users/jhendley/.rvm/gems/ruby-2.6.0/bin/solargraph",
-    "editor.parameterHints.enabled": false,
-    "sshfs.configs": [
-        {
-            "host": "sawa",
-            "name": "sawa",
-            "privateKeyPath": "$HOME/.ssh/sawa.pem",
-            "root":"/var/www/vhosts/jake/sawa",
-            "username": "ubuntu"
-        }
-    ],
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "eslint.enable": false,
+  "window.zoomLevel": 2,
+  "workbench.colorTheme": "Monokai",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "workbench.iconTheme": "vscode-great-icons",
+  "editor.tabSize": 2,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.tabCompletion": true,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
     }
+  ],
+  "vim.otherModesKeyBindingsNonRecursive": [
+    {
+      "before": ["s"],
+      "after": ["leader", "leader", "s"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-e>": false,
+    "<C-f>": true
+  },
+  "explorer.confirmDragAndDrop": false,
+  "editor.snippetSuggestions": "top",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "explorer.confirmDelete": false,
+  "solargraph.formatting": true,
+  "solargraph.commandPath": "/Users/jhendley/.rvm/gems/ruby-2.6.0/bin/solargraph",
+  "editor.parameterHints.enabled": false,
+  "sshfs.configs": [
+    {
+      "host": "sawa",
+      "name": "sawa",
+      "privateKeyPath": "$HOME/.ssh/sawa.pem",
+      "root": "/var/www/vhosts/jake/sawa",
+      "username": "ubuntu"
+    }
+  ],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.dataScience.askForKernelRestart": false,
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "editor.formatOnSave": true,
+  "ruby.format": "rubocop"
 }
