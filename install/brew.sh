@@ -22,6 +22,7 @@ apps=(
   fasd
   gifsicle
   git
+  git-delta
   gnu-sed --with-default-names
   golang
   gradle
