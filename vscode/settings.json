@@ -37,34 +37,21 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.confirmDelete": false,
-  "solargraph.formatting": true,
-  "solargraph.commandPath": "/Users/jhendley/.rvm/gems/ruby-2.6.0/bin/solargraph",
   "editor.parameterHints.enabled": false,
-  "sshfs.configs": [
-    {
-      "host": "sawa",
-      "name": "sawa",
-      "privateKeyPath": "$HOME/.ssh/sawa.pem",
-      "root": "/var/www/vhosts/jake/sawa",
-      "username": "ubuntu"
-    }
-  ],
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "python.dataScience.askForKernelRestart": false,
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "editor.formatOnSave": true,
-  "ruby.format": "rubocop",
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "[ruby]": {
-    "editor.defaultFormatter": "castwide.solargraph"
-  },
+  
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "solargraph.formatting": true,
+  "solargraph.checkGemVersion": false
 }
