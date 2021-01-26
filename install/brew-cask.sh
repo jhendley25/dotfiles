@@ -7,17 +7,15 @@ brew tap caskroom/versions
 # Install packages
 
 apps=(
-  alfred
   android-sdk
   android-ndk
   docker
   firefox
   google-chrome
   iterm2
-  screenflow
+  rectangle
   slack
   spotify
-  virtualbox
   visual-studio-code
 )
 
