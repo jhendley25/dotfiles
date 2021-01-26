@@ -26,15 +26,15 @@ fi
 
 # Finally we can source the dotfiles (order matters)
 
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,path,env,alias,nvm,antigen,work,virtualenv}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{function,path,env,alias,nvm,antigen,virtualenv}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
-if [ "$OS" = "OSX" ]; then
-  for DOTFILE in "$DOTFILES_DIR"/system/.{env,alias,function}.osx; do
-    [ -f "$DOTFILE" ] && . "$DOTFILE"
-  done
-fi
+# if [ "$OS" = "OSX" ]; then
+#   for DOTFILE in "$DOTFILES_DIR"/system/.{env,alias,function}.osx; do
+#     [ -f "$DOTFILE" ] && . "$DOTFILE"
+#   done
+# fi
 
 # Clean up
 
@@ -46,21 +46,12 @@ export OS DOTFILES_DIR EXTRA_DIR
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-export PATH="/usr/local/opt/elasticsearch@2.4/bin:$PATH"
+
+
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # override Ctrl-s for vim reasons
 stty -ixon
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/jhendley/.nvm/versions/node/v8.12.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/jhendley/.nvm/versions/node/v8.12.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/jhendley/.nvm/versions/node/v8.12.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/jhendley/.nvm/versions/node/v8.12.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /Users/jhendley/.nvm/versions/node/v8.10.0/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/jhendley/.nvm/versions/node/v8.10.0/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh

@@ -1,9 +1,7 @@
 brew install nvm
-# this doesnt seem to work for some reason.....
-nvm install 0.10
-nvm install 4
-nvm install 6
-nvm alias default 4
+
+nvm install lts/fermium
+nvm alias default lts/fermium
 nvm use default
 
 # Globally install with npm
