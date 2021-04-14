@@ -3,8 +3,6 @@ if [ ! -f /usr/local/share/antigen/antigen.zsh ]; then
     echo "Antigen not found! brew install it dummy"
 fi
 
-source /usr/local/share/antigen/antigen.zsh
-
 # Guess what to install when running an unknown command.
 antigen bundle command-not-found
 

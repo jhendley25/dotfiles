@@ -1,25 +1,18 @@
 # Install Caskroom
 
-brew tap caskroom/cask
-brew install brew-cask
-brew tap caskroom/versions
+brew tap homebrew/cask
+brew tap homebrew/cask-versions
 
 # Install packages
 
 apps=(
-  android-sdk
-  android-ndk
-  docker
-  firefox
-  google-chrome
-  iterm2
   rectangle
   slack
   spotify
   visual-studio-code
 )
 
-brew cask install "${apps[@]}"
+brew  install --cask "${apps[@]}"
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
