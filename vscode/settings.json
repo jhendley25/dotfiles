@@ -1,8 +1,7 @@
 {
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "eslint.enable": false,
-  "window.zoomLevel": 2,
-  "workbench.colorTheme": "Monokai",
+  "window.zoomLevel": 1,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "workbench.iconTheme": "vscode-great-icons",
@@ -57,5 +56,8 @@
   "[scss]": {
     "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
   },
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "editor.renderIndentGuides": false,
+  "editor.renderWhitespace": "none",
+  "workbench.colorTheme": "Dark (Molokai)"
 }
