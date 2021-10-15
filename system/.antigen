@@ -23,6 +23,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 
 
-plugins=(git)
+plugins=(git aws)
 
 source $ZSH/oh-my-zsh.sh
