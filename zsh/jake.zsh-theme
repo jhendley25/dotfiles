@@ -12,7 +12,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[green]%}o"
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}x"
 
-ZSH_THEME_AWS_PREFIX="$AWS_COLOR "
+ZSH_THEME_AWS_PREFIX=" "
 ZSH_THEME_AWS_SUFFIX=" "
 
 if [ -e ~/.rvm/bin/rvm-prompt ]; then

@@ -7,7 +7,7 @@
   "workbench.iconTheme": "vscode-great-icons",
   "editor.tabSize": 2,
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.tabCompletion": true,
+  "editor.tabCompletion": "onlySnippets",
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
@@ -15,14 +15,25 @@
   "vim.hlsearch": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "vim.otherModesKeyBindingsNonRecursive": [
     {
-      "before": ["s"],
-      "after": ["leader", "leader", "s"]
+      "before": [
+        "s"
+      ],
+      "after": [
+        "leader",
+        "leader",
+        "s"
+      ]
     }
   ],
   "vim.leader": "<space>",
@@ -47,7 +58,6 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -57,9 +67,10 @@
     "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
   },
   "workbench.startupEditor": "none",
-  "editor.renderIndentGuides": false,
   "editor.renderWhitespace": "none",
   "workbench.colorTheme": "Dark (Molokai)",
   "workbench.editor.untitled.hint": "hidden",
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "bracketPairColorizer.depreciation-notice": false,
+  "editor.guides.indentation": false
 }
